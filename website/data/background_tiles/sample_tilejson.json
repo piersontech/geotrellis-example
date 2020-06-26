@@ -1,0 +1,15 @@
+{
+    "tilejson": "1.0.0",
+    "name": "OpenStreetMap",
+    "description": "A free editable map of the whole world.",
+    "version": "1.0.0",
+    "attribution": "(c) OpenStreetMap contributors, CC-BY-SA",
+    "scheme": "xyz",
+    "tiles": [
+        "file:///home/tuser/dev/geotrellis-example/background_tiles/{z}/{x}/{y}.png"
+    ],
+    "minzoom": 0,
+    "maxzoom": 18,
+    "bounds": [ -180, -85, 180, 85 ]
+}
+

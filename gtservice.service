@@ -1,0 +1,9 @@
+[Unit]
+Description=Example GeoTrellis Server
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /usr/bin/gtservice.sh
+
+[Install]
+WantedBy=multi-user.target

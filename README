@@ -1,0 +1,23 @@
+GeoTrellis Sample Server/Website
+
+This is the delivery for the sample GeoTrellis server/website.  
+
+Contents:
+README - this file
+geotrellis-example.tar - the source package for the site and service
+GeotrellisExample.ova - the VirtualBox VM for the server in Open Virtualization Archive format
+Vagrantfile - the Vagrantfile used to set up the virtual machine
+vagrant.tar - the .vagrant directory that would allow you to rebuild or access the machine using 'vagrant ssh'.  The ssh key necessary to login to the VM as the user 'vagrant' is located in .vagrant/machines/default/virtualbox/private_key.
+
+Requirements:
+VirtualBox 6.1.8
+
+To Run:
+ - Import the VM into VirtualBox
+ - Start the VM in Headless mode
+ - In the guest OS browser, navigate to http://localhost:8000
+
+The VM has port forwarding set up for SSH (2200 & 2222), HTTP (80), and the GeoTrellis Service via HTTP (9090).
+
+The command to login into the VM directly via ssh (without having Vagrant installed) is:
+'ssh -p 2222 vagrant@127.0.0.1 -i <path>/.vagrant/machines/default/virtualbox/private_key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o PasswordAuthentication=no -o IdentitiesOnly=yes'

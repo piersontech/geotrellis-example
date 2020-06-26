@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- FontAwesome -->
+    <script src="./external/kit.fontawesome.com/fc9b38bfed.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./external/fonts.googleapis.com/lato_family.css">
+    <link href='./external/api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
+    <link href="./external/ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+    <body 
+        
+        <div class="main">
+            <main class="main__inner">
+<section class="hero">
+    <div id="interactive-demos">
+        <div id="carousel-controller" class="carousel slide carousel-fade">
+            <div class="carousel-inner hidden-xs" id="demo-controllers">
+                <div id="controller-1" class="demo-controller item active">
+                    <h2 class="demo-controller__title">
+                        GeoTrellis Weighted Overlay
+                    </h2>
+                    <p>
+                        Try adjusting the weights below to find your ideal location. If you want to <span class="overlay-dislike">avoid</span> rail stops, give them a negative weight. If you <span class="overlay-prefer">prefer</span> bars, give them a positive weight.
+                    </p>
+                    <div class="demo-controller__content">
+                        <div class="demo-controller__input-container">
+                            <label class="demo-controller__label" for="controller-1-amount-1">
+                                Bars
+                            </label>
+                            <input type="text" id="controller-1-amount-1" class="demo-amount demo-controller__input" disabled>
+                            <div class="slider-marker"></div>
+                            <div id="controller-1-slider-1"></div>
+                        </div>
+                        <div class="demo-controller__input-container">
+                            <label class="demo-controller__label" for="controller-1-amount-2">
+                                Grocery stores
+                            </label>
+                            <input type="text" id="controller-1-amount-2" class="demo-amount demo-controller__input" disabled>
+                            <div class="slider-marker"></div>
+                            <div id="controller-1-slider-2"></div>
+                        </div>
+                        <div class="demo-controller__input-container">
+                            <label class="demo-controller__label" for="controller-1-amount-3">
+                                Rail stops
+                            </label>
+                            <input type="text" id="controller-1-amount-3" class="demo-amount demo-controller__input" disabled>
+                            <div class="slider-marker"></div>
+                            <div id="controller-1-slider-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carousel-map" class="demo-map carousel slide carousel-fade">
+            <div id="demo-maps" class="carousel-inner">
+                <div class="item active">
+                    <div class="demo-map-legend">
+                       <span class="demo-map-legend__label">Avoid</span> 
+                       <img class="demo-map-legend__image" src="./assets/images/demos/red-to-blue.png"> 
+                       <span class="demo-map-legend__label">Prefer</span>
+                    </div>
+                    <div id="map-1" class="demo-map"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+            </main>
+            
+
+        <script src="./external/cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script src="./external/cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="./external/ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="./external/api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js"></script>
+        <script src="./external/netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script data-main="./assets/javascript/demos/main" src="./assets/javascript/demos/require.min.js"></script>
+	<!-- <script src="./assets/javascript/main.js"></script> -->
+    </body>
+</html>
